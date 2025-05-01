@@ -71,6 +71,8 @@ Opened Local Security Policy (Start > “secpol.msc”).
 Went to Local Policies > User Rights Assignment > “Allow log on through Remote Desktop Services.”  
 Clicked “Add User or Group” > typed Remote Desktop Users > “Check Names” > “OK” > “Apply.”
 
+Added screenshot: https://github.com/djexterjay/ActiveDirectory-Lab/blob/4596ca485025da7022e219e76df366d043562b6a/image%20(1).jpeg
+
 
 Tested: RDP as mylab\jane, confirmed login and password policy.
 
