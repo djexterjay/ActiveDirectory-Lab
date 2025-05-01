@@ -105,6 +105,8 @@ Navigated: User Configuration > Policies > Administrative Templates > Desktop.
 Double-clicked “Hide and disable all items on the desktop” > set to “Enabled” > “OK.”  
 Closed editor, selected Staff Desktop Policy, ensured “Authenticated Users” in Security Filtering.
 
+Add screenshot: https://github.com/djexterjay/ActiveDirectory-Lab/blob/24d455bc0001a0411ec8019f609a79f93d298bb8/image%20(3).jpeg
+
 FIXED GPO FILTERING:  
 Issue: gpresult /r as jane showed “filtered out.”  
 Confirmed Staff Desktop Policy linked to Staff OU.  
