@@ -49,6 +49,8 @@ User logon name: jane
 Clicked “Next,” set Password: P@ssw0rd123, unchecked “User must change password.”  
 Clicked “Finish.”
 
+Added screenshot: https://github.com/djexterjay/ActiveDirectory-Lab/blob/57c8a2bff73628b196ffb8be88f56d1874117f8f/image%20(2).jpeg
+
 
 Opened Computer Management (Start > type “compmgmt.msc”).  
 Went to Local Users and Groups > Groups > “Remote Desktop Users” > “Add” > typed jane > “Check Names” > “OK.”  
