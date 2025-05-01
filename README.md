@@ -86,6 +86,8 @@ Closed editor, selected Staff Password Policy, ensured “Authenticated Users”
 Ran gpupdate /force in Command Prompt (admin).  
 Tested: Logged in as mylab\jane, confirmed policy applied.
 
+Added screenshot: https://github.com/djexterjay/ActiveDirectory-Lab/blob/7ec4dede35091bd26ff00969b7a8f3d0713bffbf/Screenshot%202025-04-17%20155146.png
+
 5. Create Group, Share, and GPO
 
 In ADUC, right-clicked Staff OU > “New” > “Group.”  
