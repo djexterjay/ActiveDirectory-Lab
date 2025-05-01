@@ -61,8 +61,12 @@ Navigated: Computer Configuration > Policies > Windows Settings > Security Setti
 Set “Minimum password length” to 10 characters > “OK.”  
 Closed editor, selected Default Password Policy, ensured “Authenticated Users” in Security Filtering.  
 Opened Command Prompt (admin): Start > “cmd” > right-click > “Run as administrator.”  
-Ran gpupdate /force, waited for “Computer policy” and “User policy” updates.  
-Fixed RDP issue:  
+Ran gpupdate /force, waited for “Computer policy” and “User policy” updates.
+
+Added screenshot: https://github.com/djexterjay/ActiveDirectory-Lab/blob/8da970bb3f77f428326895bf9d2b5b7e69d057ea/Screenshot%202025-04-17%20155523.png
+
+
+FIXED RDP ISSUE:  
 Opened Local Security Policy (Start > “secpol.msc”).  
 Went to Local Policies > User Rights Assignment > “Allow log on through Remote Desktop Services.”  
 Clicked “Add User or Group” > typed Remote Desktop Users > “Check Names” > “OK” > “Apply.”
