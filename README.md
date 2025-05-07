@@ -131,3 +131,25 @@ Double-clicked StaffTeam > “Members” tab > “Add” > typed mike > “Check
 In Computer Management, added mike to “Remote Desktop Users.”  
 Tested: RDP as mylab\mike, accessed \\localhost\StaffFiles, created file, confirmed empty desktop.
 
+
+
+
+
+
+
+### *****CONFIGURE DRIVE MAPPING GPO
+**Purpose and Usefulness**: Maps the shared folder `\\localhost\StaffFiles` to drive `Z:` for `jane` and `mike`, making it easily accessible in File Explorer for efficient file access and management.
+
+1. Verified share path: In File Explorer, right-clicked `C:\StaffFiles` > “Properties” > “Sharing” tab, noted path `\\localhost\StaffFiles`.  
+2. In Group Policy Management, right-clicked `Staff` OU > “Create a GPO” > named `Staff Drive Mapping`.  
+3. Right-clicked `Staff Drive Mapping` > “Edit.”  
+4. Navigated: User Configuration > Preferences > Windows Settings > Drive Maps.  
+5. Right-clicked > “New” > “Mapped Drive.”  
+6. Set:  
+   - Action: Update  
+   - Location: `\\localhost\StaffFiles`  
+   - Label: Staff Files (optional)
+   - Drive Letter: `Z:`  
+9. Closed editor, confirmed “Authenticated Users” in Security Filtering.  
+10. Ran `gpupdate /force` in Command Prompt (admin).  
+11. Tested: RDP as `mylab\jane`, verified `Staff Files (Z:)` in File Explorer, created file. Repeated for `mike`.
